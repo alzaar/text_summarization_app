@@ -25,9 +25,9 @@ def summarize(article_text):
                 word_frequencies[word] = 1
             else:
                 word_frequencies[word] += 1
-        maximum_frequncy = max(word_frequencies.values())
+        maximum_frequency = max(word_frequencies.values())
     for word in word_frequencies.keys():
-        word_frequencies[word] = word_frequencies[word] / maximum_frequncy
+        word_frequencies[word] = word_frequencies[word] / maximum_frequency
         sentence_scores = {}
     for sent in sentence_list:
         for word in nltk.word_tokenize(sent.lower()):
@@ -49,6 +49,7 @@ def check_nltk_resources():
         nltk.data.find("tokenizers/punkt")
         nltk.data.find("corpora/stopwords")
     except LookupError:
+        print("Downloading NLTK resources....")
         nltk.download("punkt")
         nltk.download("stopwords")
 
