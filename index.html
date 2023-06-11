@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Text Summarizer</title>
+</head>
+<body>
+  <div style="display: flex; flex-direction: column; gap: 10; width: 50%; margin: auto;">
+    <p class="h1" style="text-align: center; margin-top: 50px;">Summarizer</p>
+    
+    <div class="input-group" style="padding: 100px; padding-top: 10px; padding-bottom: 20px;">
+      <textarea id="text-to-summarize" placeholder="What would you like to summarize ?" style="margin: 3px;" rows="20" cols="40" class="form-control" aria-label="With textarea"></textarea>
+      <textarea id="summarized-text" rows="20" cols="40" class="form-control" placeholder="Voila!" style="margin: 3px;" aria-label="With textarea"></textarea>
+    </div>
+
+    <button id="submit-button" style="width: 50%; margin: auto;" onclick="handleSubmit()" type="button" class="btn btn-info">Go!</button>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
